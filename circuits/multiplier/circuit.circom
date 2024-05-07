@@ -24,10 +24,12 @@ template Multiplier2 () {
    // AND gate
    andGate.a <== A;
    andGate.b <== B;
+
    X <== andGate.out;
 
    // NOT gate
    notGate.in <== B;
+
    Y <== notGate.out;
 
    // OR gate
@@ -36,6 +38,8 @@ template Multiplier2 () {
 
    Q <== orGate.out;
 }
+
+===================================================================
 
 template AND() {
     signal input a;
